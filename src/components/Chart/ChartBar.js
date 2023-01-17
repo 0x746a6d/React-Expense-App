@@ -1,10 +1,11 @@
 import React from "react";
-import "./CharBar.css";
+import "./ChartBar.css";
 
 const CharBar = (props) => {
   let barFillHeight = "0%";
 
-  if (props.max > 0) {
+  if (props.maxValue > 0) {
+    // percetage between 0-100 for how much the bar should be filled
     barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
   }
 
